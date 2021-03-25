@@ -1,0 +1,13 @@
+#!/bin/bash
+
+rm cmd/create/create
+rm cmd/csearch/csearch
+rm cmd/search/search
+rm cmd/setcursor/setcursor
+rm cmd/link/link
+
+go build -o ./cmd/create/create ./cmd/create/main.go
+go build -o ./cmd/csearch/csearch ./cmd/csearch/main.go
+go build -o ./cmd/search/search ./cmd/search/main.go
+go build -o ./cmd/setcursor/setcursor ./cmd/setcursor/main.go
+go build -o ./cmd/link/link ./cmd/link/main.go
